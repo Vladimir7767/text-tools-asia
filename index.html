@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Best Free Text Case Converter Online 2026 — Change Text Register</title>
+<meta name="description" content="Free online text case converter for Asia. Convert text to UPPERCASE, lowercase, sentence case, or inverse case instantly in 1 click.">
+<style>
+body{font-family:'Segoe UI',sans-serif;background:#f4f6f9;margin:0;padding:20px;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.05);max-width:460px;width:100%;text-align:center}
+textarea{width:100%;height:120px;padding:10px;border:1px solid #cbd5e1;border-radius:6px;box-sizing:border-box;font-size:14px;resize:vertical}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+button{padding:10px;background:#0284c7;border:none;color:#fff;font-weight:bold;border-radius:6px;cursor:pointer;font-size:13px}
+.res{margin-top:15px;padding:15px;display:none;background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;text-align:left}
+.ad{display:none;margin-top:15px;min-height:100px;text-align:center}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>Text Case Converter</h2>
+<textarea id="inp" placeholder="Paste or type your text here..."></textarea>
+<div class="grid">
+<button onclick="go('up')">UPPERCASE</button>
+<button onclick="go('low')">lowercase</button>
+<button onclick="go('cap')">Sentence case</button>
+<button onclick="go('inv')">iNVERSE cASE</button>
+</div>
+<div id="res" class="res">
+<strong>Result:</strong>
+<textarea id="out" style="height:90px;margin-top:8px" readonly></textarea>
+<button onclick="copy()" style="background:#16a34a;width:100%;margin-top:8px;color:#fff;border:none;padding:10px;font-weight:bold;border-radius:6px;cursor:pointer">Copy Text</button>
+</div>
+<div id="ads" class="ad"><div id="container-e8c895e6c70ade8e4ef4a72354f42e97"></div></div>
+</div>
+<script>
+function showAds(){
+const c=document.getElementById('ads');
+if(!window.adScriptLoaded){
+window.atOptions={'key':'e8c895e6c70ade8e4ef4a72354f42e97','format':'iframe','height':90,'width':728,'params':{}};
+var s=document.createElement('script');s.type='text/javascript';s.async=!0;
+s.src=['https://','bagelstoppage.','com/','e8c895e6c70ade8e4ef4a72354f42e97/','invoke.js'].join('');c.appendChild(s);window.adScriptLoaded=!0
+}c.style.display='block'
+}
+function go(t){
+const i=document.getElementById('inp').value;
+if(!i.trim()){alert('Please enter text to process');return}
+let r='';
+if(t==='up')r=i.toUpperCase();
+if(t==='low')r=i.toLowerCase();
+if(t==='cap')r=i.toLowerCase().replace(/(^\s*|[.!?]\s+)([a-z])/g,(m,p1,p2)=>p1+p2.toUpperCase());
+if(t==='inv')r=i.split('').map(c=>c===c.toUpperCase()?c.toLowerCase():c.toUpperCase()).join('');
+document.getElementById('out').value=r;
+document.getElementById('res').style.display='block';
+showAds()
+}
+function copy(){
+const o=document.getElementById('out');o.select();
+navigator.clipboard.writeText(o.value).then(()=>alert('Text copied successfully!'))
+}
+</script>
+<div style="display:none!important;visibility:hidden!important;opacity:0!important;width:0!important;height:0!important;position:absolute!important;top:-9999px!important;">
+<h2>Change text case online free — Upper to lower letter case converter India, Malaysia</h2>
+<p>Optimize your content formatting and fix accidental Caps Lock with our free online utility. Fast text transformation and sentence formatting in 1 click.</p>
+<ul>
+<li>free text case converter online india</li>
+<li>convert uppercase to lowercase text malaysia</li>
+<li>make first letter capital online tool singapore</li>
+</ul>
+</div>
+</body>
+</html>
